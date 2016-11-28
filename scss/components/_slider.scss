@@ -1,0 +1,122 @@
+.slider {
+	width: 1354px;
+	margin: 0 auto;
+	position: relative;
+	cursor: pointer;
+}
+
+.slider__item {
+	width: 1354px;
+	height: 326px;
+	position: relative;
+	outline: none;
+}
+
+.slider__text {
+	width: 500px;
+	height: 128px;
+	position: absolute;
+	top: 30%;
+	bottom: 50%;
+	left: 6%;
+	background-color: rgba(203,148,76, 0.8);
+	z-index: 10;
+}
+
+.slick__banner {
+	color: #fff;
+	font-size: 45px;
+	font-weight: 400;
+	font-stretch: extra-condensed;
+	line-height: 48px;
+	opacity: 1;
+	padding: 2% 1% 2% 3%
+}
+
+.slick-prev {	
+	width: 37px;
+	height: 128px;
+	background-color: rgba(203,148,76, 0.8);
+	position: absolute;
+	left: 0;
+	z-index: 20;
+	padding-right: 2px;
+
+	&:before {
+		content: $icon-arrow-left;
+		font-family: "myicons";
+		color: #fff;
+		font-weight: 600;
+		font-size: 37px;
+		opacity: 1;
+		transition: 1s;
+	}
+
+	&:hover {
+		background-color: rgba(255,255,255, 0.8);
+		transition: 0.7s;
+
+		&:before {
+			color: $color-for-elements;
+			opacity: 1;
+		}
+	}
+
+	@media only screen and (max-width: 480px) {
+		height: 60px;	
+	}
+}
+
+.slick-next {
+	width: 37px;
+	height: 128px;
+	border-radius: none;
+	background-color: rgba(203,148,76, 0.8);
+	position: absolute;
+	right: 0;
+	z-index: 20;
+
+	&:before {
+		content: $icon-arrow-right;
+		font-family: "myicons";
+		color: #fff;
+		font-weight: 600;
+		font-size: 37px;
+		opacity: 1;
+		transition: 1s;
+	}
+
+	&:hover {
+		background-color: rgba(255,255,255, 0.8);
+		transition: 0.7s;
+
+		&:before {
+			color: $color-for-elements;
+			opacity: 1;
+		}
+	}
+}
+
+.slick-dots li button {
+	width: 20px;
+	height: 20px;
+	border-radius: 100%;
+	background: $color-for-elements;
+	opacity: 0.33;
+	transition: background .3s;
+}
+
+.slick-dots li.slick-active button {
+	background: $color-for-elements;
+	opacity: 1;
+}
+
+.slick-dots li button:before {
+	content: "";
+
+}
+
+.slick-dots li.slick-active button:before {
+
+}
+
