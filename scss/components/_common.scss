@@ -37,7 +37,7 @@ input[type=submit], input[type=button], button{-webkit-appearance: none; outline
 
 /*
 ================================================================================
-|                                     MAIN STYLES                                     |
+|                                  MAIN STYLES                                  | 
 ================================================================================
 */
 
@@ -188,6 +188,55 @@ header {
 	text-align:left;
 }
 
+.breadcrumb {
+	margin: 5em auto 2em;
+	max-width: 1240px;
+
+	a {
+		vertical-align: middle;
+		line-height: 24px;
+		font-size: 15px;
+		font-weight: 700;
+	}
+
+	a:nth-child(-n+2):after {
+		content: $icon-arrow-right;
+		font-family: 'myicons';
+		vertical-align: middle;
+		line-height: 20px;
+		font-size: 24px;
+		color: $color-for-elements;
+	}
+}
+
+.gallery {
+	max-width: 1354px;
+	text-align: center;
+}
+
+.gallery__item {
+	//position: absolute;	
+	display: inline-block;
+	margin: 10px 5px;
+	width: 300px;
+	padding: 10px 0;
+	box-shadow: 0 0 7px rgba(0, 0, 0, 0.3);
+
+	img {
+		width: 100%;
+	}
+}
+
+// .gallery__item-detales {
+// 	//position: relative;
+// 	top: 0;
+// 	left: 0;
+// 	width: 100%;
+// 	height: 100%;
+// 	box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.3) inset;
+// 	text-align: center;
+
+// }
 
 
 /*
@@ -195,12 +244,16 @@ header {
 |                                     FOOTER                                   |
 ================================================================================
 */
-footer {
-	background:url(../img/bg_footer.jpg) no-repeat; 	
+footer {	
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	height:81px; 
-	text-align:left;
 	position:absolute;
-	left:0px; bottom:0px;
+	left:0px; 
+	bottom:0px;
 	width:100%;
 	min-width: 320px;
+	color: #cb944c;
+	border-top: 1px solid #b9b8bd;
 }
